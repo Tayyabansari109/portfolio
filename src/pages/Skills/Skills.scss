@@ -1,0 +1,83 @@
+#skills {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.spa {
+    margin: 100px 0px 100px 0px;
+}
+
+#cab1, #cab2, #cab3, #cab4 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    
+}
+
+@media (max-width: 1030px) {
+  #cab1, #cab2, #cab3, #cab4 {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+   color: white;
+    background-color: #011031 !important;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(79, 243, 234);
+    transition: transform 0.9s ease !important;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover, .card8:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0px 0px 35px rgb(79, 243, 234);
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    width: 400px;
+  }
+}
+@media (max-width: 460px) {
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    width: 350px;
+  }
+}
+@media (max-width: 360px) {
+  .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    max-width: 300px;
+  }
+}
+
+.progress-container {
+ width: 100%;
+  background: rgb(79, 243, 234);
+  height: 20px;
+    border-radius: 15px;
+    color: black;
+    margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  text-align: center;
+  line-height: 25px;
+}
+
+
+.ant-btn {
+ background-color: #56eff5 !important;
+ width: 100%;
+ border-radius: 30px;
+ color: black;
+}

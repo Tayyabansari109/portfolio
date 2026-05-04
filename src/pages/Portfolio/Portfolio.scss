@@ -1,0 +1,58 @@
+#portfolio {
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card15 img {
+width: 100%;
+ height: auto;  
+  object-fit: cover; 
+  padding: 20px;
+  border-radius: 30px;
+}
+.card15 {
+    background-color: #011031 !important;
+    color: white;
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto;
+    margin-left: 60px;
+    border-radius: 20px;
+    flex: 1 1 200px;
+     box-shadow: 0px 0px 9px rgb(79, 243, 234);
+}
+@media (min-width: 300px) and (max-width: 420px) {
+  .card15 {
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+.card15:hover {
+     transform: scale(1.05) !important;
+     transition: transform 0.3s ease;
+     box-shadow: 0px 0px 20px rgb(79, 243, 234);
+     cursor: pointer;
+}
+
+.ico {
+    color: rgb(79, 243, 234);
+    font-size: 25px;
+    margin: 20px 0px 20px 8px;
+}
+.ico:hover {
+    box-shadow: 0px 0px 30px rgb(79, 243, 234);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+div>h4 {
+    color: rgb(79, 243, 234) !important;
+
+}

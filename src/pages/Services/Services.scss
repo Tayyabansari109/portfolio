@@ -1,0 +1,39 @@
+#faah {
+    display: flex;
+    gap: 50px;
+}
+@media (max-width: 1030px) {
+  #faah {
+    flex-direction: column;
+    // gap: 30px;
+  }
+}
+
+.card9, .card10, .card11, .card12, .card13, .card14 {
+  color: white;
+  height: 100%;
+  gap: 30px;
+  background-color: #011031 !important;
+  border-radius: 8px;
+  border-left: 4px solid #5fefd7;
+  box-shadow: 0px 0px 20px #5fefd7;
+  padding: 20px;
+  transition: transform 0.9s ease !important;
+}
+
+.card9:hover, .card10:hover, .card11:hover, .card12:hover, .card13:hover, .card14:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0px 0px 35px rgb(79, 243, 234);
+  cursor: pointer;
+}
+
+@media (max-width: 575px) {
+  .card9, .card10, .card11, .card12, .card13, .card14 {
+    margin: 0px 15px 0px 15px;
+  }
+}
+
+div>h4 {
+    color: rgb(79, 243, 234);
+
+}
