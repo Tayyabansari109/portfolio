@@ -32,7 +32,7 @@ const Hero = () => {
         <button id='button'>View Resume</button>
    </div>
    <div >
-      <img className="image" src="src\assets\my_photo-removebg-preview-removebg-preview.png" alt="" />
+      <img className="image" src="src/assets/my_photo-removebg-preview-removebg-preview.png" alt="" />
   </div>
     </section>
     
