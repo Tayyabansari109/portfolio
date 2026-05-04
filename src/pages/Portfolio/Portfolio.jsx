@@ -2,6 +2,7 @@ import React from 'react'
 import './Portfolio.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {  faDesktop } from "@fortawesome/free-solid-svg-icons";
+import affliate from '../../assets/affliate.png';
 
 const Portfolio = () => {
   return (
@@ -12,7 +13,7 @@ const Portfolio = () => {
 
     <div className="card15" style={{ width: '18rem' }}>
         <div className="card-body">
-          <img src="src/assets/affliate.png" alt="" />
+          <img src={affliate} alt="affiliate" />
           <h4 className="card-title mt-3 text-center">Affliate Website</h4>
           <p className="card-text mt-3 m-4">This Website is made on React JS and Integration on Google Firebase</p>
           <a href="https://prime-select-weld.vercel.app/" target="_blank"  className="card-link"><FontAwesomeIcon icon={faDesktop} className='ico' /></a>

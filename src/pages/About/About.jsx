@@ -1,12 +1,13 @@
 import React from 'react'
 import './About.scss'
 import { Button } from 'bootstrap'
+import myphoto from "../../assets/myphoto.png"
 
 const About = () => {
   return (
     <section id='about'>
         <div className="cover">
-            <img id='respo' src="../src/assets/my-photo.png" alt="Tayyab" />
+            <img id='respo' src={myphoto} alt="Tayyab" />
         </div>
       <div>
         <h1 className='text-center shadow' id='he'>About Me</h1>

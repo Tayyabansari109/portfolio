@@ -2,6 +2,8 @@ import React from 'react'
 import './Hero.scss'
 import { useState, useEffect } from "react";
 import { Button } from 'antd';
+import myphoto from "../../assets/myphoto.png"
+
 
 function TextAnimation() {
   const texts = [" a Frontend Deve.", " a React Developer", " a Freelancer"];
@@ -32,7 +34,7 @@ const Hero = () => {
         <button id='button'>View Resume</button>
    </div>
    <div >
-      <img className="image" src="src/assets/my-photo.png" alt="" />
+      <img className="image" src={myphoto} alt="" />
   </div>
     </section>
     
