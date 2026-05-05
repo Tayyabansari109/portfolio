@@ -6,17 +6,21 @@
     align-items: center;
     gap: 90px;
     margin-top: 150px !important;
+
 }
 
 .card{
-    background-color: #040e23 !important;
+    // background-color: #061a45 !important;
+    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
     max-width: 60%;
     padding: 50px;
-    border: 1px solid rgb(79, 243, 234);
-    box-shadow: 0px 0px 15px rgb(79, 243, 234);
+    border: 1px solid #0ff !important;
+    border-radius: 20px !important;
+    // box-shadow: 0px 0px 15px rgb(79, 243, 234);
     transition: transform 0.3s ease;
-}
-.card:hover{
+  }
+  .card:hover{
+  box-shadow: 0px 0px 15px rgb(79, 243, 234);
   transform: scale(1.05);
 }
 @media (max-width: 900px) {
@@ -40,11 +44,12 @@
     border-radius: 50%;
     margin-top: 20px;
     margin-left: 30px;
-    box-shadow: 0px 0px 50px rgb(79, 243, 234);
+    box-shadow: 0px 0px 10px rgb(79, 243, 234);
     transition: transform 0.3s ease;
-}
-.image:hover {
-  transform: scale(1.05);
+  }
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px rgb(79, 243, 234);
   // transform: rotate(2deg);
   cursor: pointer;
 }
@@ -89,14 +94,14 @@
 #button{
     background-color: #040e23;
     border: 2px solid #0991cc;
-    box-shadow: 0px 0px 30px rgb(79, 243, 234);
+    box-shadow: 0px 0px 10px rgb(79, 243, 234);
    margin-top: 20px;
    color: white;
    font-weight: bold !important;
    font-size: 16px !important;
   padding: 15px !important;
   border-radius: 50px !important;
-  width: 150px !important;
+ max-width: 150px !important;
 }
 #button:hover {
     background-color: rgb(79, 243, 234);
