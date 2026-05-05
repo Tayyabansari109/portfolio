@@ -5,8 +5,10 @@ import About from './pages/About/About'
 import Skills from './pages/Skills/Skills'
 import Services from './pages/Services/Services'
 import Portfolio from './pages/Portfolio/Portfolio'
+import Contact from './pages/Contact/Contact'
 import Footer from "./components/Footer/index"
 import './App.scss'
+import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap"
 
 const App = () => {
@@ -19,6 +21,7 @@ const App = () => {
       <Skills />
       <Services />
       <Portfolio />
+      <Contact />
     </main>
     <Footer />
     </>
