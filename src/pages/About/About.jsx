@@ -17,7 +17,9 @@ const About = () => {
          I enjoy creating responsive and modern websites, and I am continuously improving my abilities to deliver clean and user-friendly
          interfaces.
        </p>
-       <button id='but'>Contact ME</button>
+       <a href="#contact">
+         <button id='but'>Contact Me</button>
+       </a>
       </div>
 
     </section>

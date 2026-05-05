@@ -8,5 +8,132 @@
     background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
     border: 1px solid #09ccab;
     box-shadow: 0px 0px 10px rgb(79, 243, 234);
-    margin-top: 20px;
+    margin-top: 30px !important;
+    margin-bottom: 50px;
+}
+
+.icons {
+    margin: 20px;
+}
+#int {
+    font-size: 24px;
+    color: white;
+    padding: 8px;
+    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
+    border: 1px solid #098bcc;
+    box-shadow: 0px 0px 10px rgb(79, 243, 234);
+    border-radius: 10px;
+}
+#int:hover {
+      background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+    box-shadow: 0px 0px 20px rgb(79, 243, 234);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#gii {
+    font-size: 24px;
+    color: white;
+    padding: 8px;
+    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
+    border: 1px solid #098bcc;
+    box-shadow: 0px 0px 10px rgb(79, 243, 234);
+    border-radius: 10px;
+}
+#gii:hover {
+    background:  #333 ;
+    box-shadow: 0px 0px 20px rgb(79, 243, 234);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+#inn {
+    font-size: 24px;
+    color: white;
+    padding: 8px;
+    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
+    border: 1px solid #098bcc;
+    box-shadow: 0px 0px 10px rgb(79, 243, 234);
+    border-radius: 10px;
+}
+#inn:hover {
+    background: #0A66C2 !important;
+    box-shadow: 0px 0px 20px rgb(79, 243, 234);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+#wha {
+    font-size: 24px;
+    color: white;
+    padding: 8px;
+    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
+    border: 1px solid #098bcc;
+    box-shadow: 0px 0px 10px rgb(79, 243, 234);
+    border-radius: 10px;
+}
+#wha:hover {
+    background: #25D366 !important;
+    box-shadow: 0px 0px 20px rgb(79, 243, 234);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+#fac {
+    font-size: 24px;
+    color: white;
+    padding: 8px;
+    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
+    border: 1px solid #098bcc;
+    box-shadow: 0px 0px 10px rgb(79, 243, 234);
+    border-radius: 10px;
+}
+#fac:hover {
+    background: #1877F2 !important;
+    box-shadow: 0px 0px 20px rgb(79, 243, 234);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+#eve {
+    font-size: 24px;
+    color: white;
+    padding: 8px;
+    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
+    border: 1px solid #098bcc;
+    box-shadow: 0px 0px 10px rgb(79, 243, 234);
+    border-radius: 10px;
+}
+#eve:hover {
+    background: #EA4335 !important;
+    box-shadow: 0px 0px 20px rgb(79, 243, 234);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#butt {
+   margin-top: 20px;
+   color: white;
+   font-weight: bold !important;
+   font-size: 16px !important;
+   padding: 15px;
+   border-radius: 30px !important;
+   width: 150px !important;
+   background: linear-gradient(  45deg,#30e3f4, #0299d4);
+   margin: 20px;
+}
+#butt:hover {
+    background-color: #5fefd7;
+    box-shadow: 0px 0px 10px #09ccab;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
