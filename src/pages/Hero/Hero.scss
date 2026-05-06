@@ -8,6 +8,17 @@
     background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
   }
 
+.card, .image {
+  margin-top: 150px !important;
+}
+
+@media (min-width:300px) and (max-width:1000px) {
+  .image{
+    margin-top: 30px !important;
+  }
+}
+
+
 .card{
     background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
     max-width: 60%;
