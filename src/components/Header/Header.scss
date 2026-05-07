@@ -3,9 +3,9 @@
 //     position: fixed;
 //     background-color: transparent;
 // }
-// footer{
-//     background-color: transparent;
-// }
+footer{
+    background-color: transparent;
+}
 // #Personal{
 //     font-size: larger;
 // }
@@ -89,11 +89,11 @@
     position: absolute;
     top: 80px;
     left: -100%;
-    width: 100%;
-    background-color: transparent;
+    width: 20%;
+    background-color: rgb(3, 2, 35);
     flex-direction: column;
-    // text-align: center;
-    margin-left: 30px;
+    text-align: center;
+    // margin-left: 10px;
     padding: 30px 0;
     transition: 0.4s;
   }
@@ -102,4 +102,36 @@
     left: 0;
   }
 
+}
+
+
+
+.menu-btn{
+  width: 35px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-btn span{
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+
+.menu-btn.active span:nth-child(1){
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-btn.active span:nth-child(2){
+  opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3){
+  transform: rotate(-45deg) translate(6px, -6px);
 }

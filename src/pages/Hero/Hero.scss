@@ -12,7 +12,7 @@
   margin-top: 130px !important;
 }
 
-@media (min-width:300px) and (max-width:1000px) {
+@media (min-width:300px) and (max-width:1030px) {
   .image{
     margin-top: 20px !important;
     margin-bottom: 40px !important;
@@ -23,7 +23,7 @@
 .card{
     background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
     // max-width: 60%;
-    width: min(500px, 90%);
+    width: min(600px, 90%);
     padding: 50px;
     border: 1px solid #0ff !important;
     border-radius: 20px !important;
@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width:1000px) {
+@media (max-width:1030px) {
   #hero {
     flex-direction: column;
   }
