@@ -1,4 +1,6 @@
 import React from 'react'
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Header from "./components/Header/index"
 import Hero from "./pages/Hero/Hero"
 import About from './pages/About/About'
@@ -8,8 +10,6 @@ import Portfolio from './pages/Portfolio/Portfolio'
 import Contact from './pages/Contact/Contact'
 import Footer from "./components/Footer/index"
 import './App.scss'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap"
 
 const App = () => {
   return (

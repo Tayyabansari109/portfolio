@@ -1,17 +1,8 @@
 import React from 'react'
 import './Header.scss'
-import "bootstrap/dist/js/bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
-
+import "bootstrap/dist/js/bootstrap.bundle.min"
 
 const Header = () => {
-
-const closeMenu = () => {
-  const nav = document.getElementById("nav");
-  if (nav.classList.contains("show")) {
-    nav.classList.remove("show");
-  }
-};
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark top-0 start-0 w-100" id='nov'>
@@ -21,14 +12,14 @@ const closeMenu = () => {
       <span className="navbar-toggler-icon"></span>
     </button>
     
-      <div className="collapse navbar-collapse">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item fw-bold"><a className="nav-link" href="#home" onClick={closeMenu}>Home</a></li>
-              <li className="nav-item fw-bold"><a className="nav-link" href="#about" onClick={closeMenu}>About</a></li>
-              <li className="nav-item fw-bold"><a className="nav-link" href="#skills" onClick={closeMenu}>Skills</a></li>
-              <li className="nav-item fw-bold"><a className="nav-link" href="#services" onClick={closeMenu}>Services</a></li>
-              <li className="nav-item fw-bold"><a className="nav-link" href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
-              <li className="nav-item fw-bold"><a className="nav-link" href="#contact" onClick={closeMenu}>Contact</a></li>
+              <li className="nav-item fw-bold"><a className="nav-link" href="#hero" >Home</a></li>
+              <li className="nav-item fw-bold"><a className="nav-link" href="#about">About</a></li>
+              <li className="nav-item fw-bold"><a className="nav-link" href="#skills">Skills</a></li>
+              <li className="nav-item fw-bold"><a className="nav-link" href="#services">Services</a></li>
+              <li className="nav-item fw-bold"><a className="nav-link" href="#portfolio">Portfolio</a></li>
+              <li className="nav-item fw-bold"><a className="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
 
