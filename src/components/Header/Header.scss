@@ -89,8 +89,8 @@ footer{
     position: absolute;
     top: 80px;
     left: -100%;
-    width: 20%;
-    background-color: rgb(3, 2, 35);
+    width: 120px;
+    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
     flex-direction: column;
     text-align: center;
     // margin-left: 10px;
@@ -134,4 +134,15 @@ footer{
 
 .menu-btn.active span:nth-child(3){
   transform: rotate(-45deg) translate(6px, -6px);
+}
+.menu-btn{
+  display: none;
+}
+
+@media (max-width: 1000px){
+
+  .menu-btn{
+    display: flex;
+  }
+
 }
