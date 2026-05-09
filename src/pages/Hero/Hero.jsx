@@ -3,6 +3,7 @@ import './Hero.scss'
 import { useState, useEffect } from "react";
 import { Button } from 'antd';
 import myphoto from "../../assets/myphoto.png"
+import { Link } from 'react-router-dom';
 
 
 function TextAnimation() {
@@ -31,7 +32,10 @@ const Hero = () => {
        <h1 className='text-white text-center shadow'>Hi, I'm Muhammad Tayyab</h1>
 
         <TextAnimation />
+      <Link to="/resume">
         <button id='button'>View Resume</button>
+      </Link>
+      
    </div>
    <div >
       <img className="image" src={myphoto} alt="" />

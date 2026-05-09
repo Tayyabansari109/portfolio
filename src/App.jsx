@@ -1,30 +1,46 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Header from "./components/Header/index"
-import Hero from "./pages/Hero/Hero"
-import About from './pages/About/About'
-import Skills from './pages/Skills/Skills'
-import Services from './pages/Services/Services'
-import Portfolio from './pages/Portfolio/Portfolio'
-import Contact from './pages/Contact/Contact'
 import Footer from "./components/Footer/index"
 import './App.scss'
 
+import Frontend from './pages/Frontend/Frontend';
+import Resume from './pages/Resume/Resume';
+
+import { Route, Routes } from 'react-router-dom';
+
 const App = () => {
   return (
-    <>
-    <Header />
-    <main>
-      <Hero />
-      <About />
-      <Skills />
-      <Services />
-      <Portfolio />
-      <Contact />
-    </main>
-    <Footer />
-    </>
+    <Routes>
+
+      <Route
+        path="/"
+        element={
+          <>
+            <Header />
+            <Frontend />
+            <Footer />
+          </>
+        }
+      />
+
+      <Route
+        path="/portfolio"
+        element={
+          <>
+            <Header />
+            <Frontend />
+            <Footer />
+          </>
+        }
+      />
+
+      <Route
+        path="/resume"
+        element={<Resume />}
+      />
+
+    </Routes>
   )
 }
 
