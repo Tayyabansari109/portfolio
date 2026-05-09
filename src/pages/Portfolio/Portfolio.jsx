@@ -9,7 +9,7 @@ import fiverr3 from '../../assets/fiverr3.png';
 
 const Portfolio = () => {
   return (
-    <section id='portfolio'> 
+    <section id='aboutme'> 
     <div>
      <h1 className="text-center shadow spa">Portfolio</h1>
     </div>

@@ -36,7 +36,7 @@ const App = () => {
       />
 
       <Route
-        path="/resume"
+        path="/portfolio/resume"
         element={<Resume />}
       />
 

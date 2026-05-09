@@ -28,11 +28,11 @@ function TextAnimation() {
 const Hero = () => {
   return (
     <section id='hero'>
-   <div className="card">
+   <div data-aos="flip-left" className="card">
        <h1 className='text-white text-center shadow'>Hi, I'm Muhammad Tayyab</h1>
 
         <TextAnimation />
-      <Link to="/resume">
+      <Link to="/portfolio/resume">
         <button id='button'>View Resume</button>
       </Link>
       

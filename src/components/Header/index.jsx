@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
@@ -8,10 +9,12 @@ const Header = () => {
   return (
     <header className="header">
 
-      <div className="container">
+      <div className="container nov">
 
         <div className="logo shadow">
+        
           𝙈𝙔 𝙋𝙊𝙍𝙏𝙁𝙊𝙇𝙄𝙊
+        
         </div>
 
         <nav className="shadow" className={menuOpen ? "nav active" : "nav"}>
@@ -20,7 +23,7 @@ const Header = () => {
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#aboutme">Portfolio</a>
           <a href="#contact">Contact</a>
 
         </nav>
