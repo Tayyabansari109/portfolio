@@ -2,11 +2,11 @@
     // background-color: black !important;
     display: flex;
     flex-direction: row;
-    margin: 50px;
+    margin: 70px;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 #he {
@@ -20,7 +20,7 @@
     border: 6px solid #5fefd7;
     border-radius: 10px;
     margin-top: 20px;
-    margin-left: 30px;
+    // margin-left: 0px;
     box-shadow: 0px 0px 25px rgb(79, 243, 234);
     transition: transform 0.3s ease;
   }
@@ -53,6 +53,8 @@
 @media (max-width:800px) {
   #about {
     flex-direction: column;
+    margin: 15px !important;
+    // margin: 0px !important;
   }
 }
 
