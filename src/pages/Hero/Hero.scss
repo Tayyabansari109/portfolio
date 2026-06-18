@@ -4,32 +4,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px;
-    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
+    gap: 10px;
+    background: black;
+  justify-content: space-between;
+  position: relative;
+  overflow: visible !important;
   }
 
-.card, .image {
-  margin-top: 130px !important;
-}
 
-@media (min-width:300px) and (max-width:1030px) {
-  .image{
-    margin-top: 20px !important;
-    margin-bottom: 40px !important;
-    margin-left: 0px !important;
-  }
-}
 
 
 .card{
-    background: linear-gradient(180deg, #021B2E, #032B3F, #041F2F);
-    // max-width: 60%;
-    width: min(600px, 90%);
+    background: black;
+    max-width: 100%;
+    width: min(600px, 100%);
     padding: 50px;
     border: 1px solid #0ff !important;
     border-radius: 20px !important;
     box-shadow: 0px 0px 10px rgb(79, 243, 234);
     transition: transform 0.3s ease;
+    margin-top: 130px !important;
   }
   .card:hover{
   box-shadow: 0px 0px 15px rgb(79, 243, 234);
@@ -39,48 +33,16 @@
   .card {
     max-width: 90%;
     padding: 30px;
+    margin-top: 0px !important;
   }
 }
 @media (min-width: 300px) and (max-width: 420px) {
   .card {
     max-width: 100%;
     padding: 15px;
-    // margin: 0px;
+    margin-top: 0px !important;
   }
 }
-
-.image{
-    text-align: center;
-   max-width: 300px;
-    max-height:300px;
-    border: 2px solid #0991cc;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-left: 30px;
-    box-shadow: 0px 0px 10px rgb(79, 243, 234);
-    transition: transform 0.3s ease;
-  }
-  .image:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 50px rgb(79, 243, 234);
-  // transform: rotate(2deg);
-  cursor: pointer;
-}
-
-@media (max-width: 420px) {
-  .image {
-   max-height: 250px;
-   max-width: 250px;
-  }
-}
-@media (max-width: 320px) {
-  .image {
-  //  max-height: 250px;
-  //  max-width: 250px;
-  margin-left: 0px;
-  }
-}
-
 @media (max-width:1030px) {
   #hero {
     flex-direction: column;
@@ -92,17 +54,17 @@
     margin-top: 20px;
     // padding-bottom: 0px;
 }
-@media (max-width: 470px) {
-  .highlight {
-    font-size: 20px;
-    padding: 15px 0px 10px 0px ;
-  }
-}
-@media (min-width: 300px) and (max-width: 420px) {
-  .highlight {
-    font-size: 14px;
-  }
-}
+// @media (max-width: 470px) {
+//   .highlight {
+//     font-size: 20px;
+//     padding: 15px 0px 10px 0px ;
+//   }
+// }
+// @media (min-width: 300px) and (max-width: 420px) {
+//   .highlight {
+//     font-size: 14px;
+//   }
+// }
 
 #button{
     background-color: #040e23;
@@ -122,4 +84,18 @@
     border: 2px solid rgb(79, 243, 234);
     // border: 2px solid #040e23;
     box-shadow: 0px 0px 30px rgb(79, 243, 234);
+}
+
+.robot-container {
+  width: 50%;
+  height: 600px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+@media (max-width: 968px) {
+  .robot-container {
+    width: 100%;
+    height: 500px; /* ya 500px, test karke dekho */
+  }
 }
