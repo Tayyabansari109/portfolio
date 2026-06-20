@@ -16,8 +16,8 @@ function isIOSSafari() {
 // taake genuinely weak (Android Go tier, ~2-3GB) phones hi catch hon, decent phones nahi
 function isWeakAndroid() {
   const isAndroid = /Android/i.test(navigator.userAgent)
-  const hasLowMemory = navigator.deviceMemory && navigator.deviceMemory <= 2
-  const hasFewCores = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2
+  const hasLowMemory = navigator.deviceMemory && navigator.deviceMemory <= 0
+  const hasFewCores = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 0
   return isAndroid && (hasLowMemory || hasFewCores)
 }
 
