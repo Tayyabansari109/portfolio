@@ -11,10 +11,13 @@ function isIOSSafari() {
 }
 
 // Android/other low-RAM, low-core devices
+// Note: Chrome's deviceMemory API rounds DOWN to nearest power-of-two for privacy
+// (e.g. a 6GB phone reports as 4GB) — isliye threshold conservative rakha hai
+// taake genuinely weak (Android Go tier, ~2-3GB) phones hi catch hon, decent phones nahi
 function isWeakAndroid() {
   const isAndroid = /Android/i.test(navigator.userAgent)
-  const hasLowMemory = navigator.deviceMemory && navigator.deviceMemory <= 4
-  const hasFewCores = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4
+  const hasLowMemory = navigator.deviceMemory && navigator.deviceMemory <= 2
+  const hasFewCores = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2
   return isAndroid && (hasLowMemory || hasFewCores)
 }
 
