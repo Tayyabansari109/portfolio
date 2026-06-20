@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useRef, useState } from 'react'
+import { Suspense, lazy, useEffect, useRef, useState, Component } from 'react'
 
 const Spline = lazy(() => import('@splinetool/react-spline'))
 
@@ -49,6 +49,31 @@ function FallbackView({ className, fallbackImage }) {
       )}
     </div>
   )
+}
+
+// Suspense sirf "loading" handle karta hai, ERRORS nahi.
+// Agar Spline mount/render karte waqt crash ho (jaise WebGL create na ho paye),
+// to React poora tree blank kar deta hai bina is boundary ke.
+class SplineErrorBoundary extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { hasError: false }
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true }
+  }
+
+  componentDidCatch(error) {
+    console.error('Spline robot failed to load on this device:', error)
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return this.props.fallback
+    }
+    return this.props.children
+  }
 }
 
 export function SplineScene({ scene, className, fallbackImage }) {
@@ -105,24 +130,28 @@ export function SplineScene({ scene, className, fallbackImage }) {
   return (
     <div ref={containerRef} className={className}>
       {shouldLoad ? (
-        <Suspense
-          fallback={
-            <div className="w-full h-full flex items-center justify-center">
-              <span>Loading...</span>
-            </div>
-          }
+        <SplineErrorBoundary
+          fallback={<FallbackView className={className} fallbackImage={fallbackImage} />}
         >
-          <Spline
-            scene={scene}
-            className={className}
-            onLoad={() => {
-              // Lazy-mount ke baad Spline ko size dobara calculate karne par majboor karo
-              requestAnimationFrame(() => {
-                window.dispatchEvent(new Event('resize'))
-              })
-            }}
-          />
-        </Suspense>
+          <Suspense
+            fallback={
+              <div className="w-full h-full flex items-center justify-center">
+                <span>Loading...</span>
+              </div>
+            }
+          >
+            <Spline
+              scene={scene}
+              className={className}
+              onLoad={() => {
+                // Lazy-mount ke baad Spline ko size dobara calculate karne par majboor karo
+                requestAnimationFrame(() => {
+                  window.dispatchEvent(new Event('resize'))
+                })
+              }}
+            />
+          </Suspense>
+        </SplineErrorBoundary>
       ) : (
         <div className="w-full h-full flex items-center justify-center">
           <span className="text-white/30 text-sm">Loading 3D scene…</span>
