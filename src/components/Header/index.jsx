@@ -11,9 +11,9 @@ const Header = () => {
 
       <div className="container nov">
 
-        <div className="logo shadow">
+        <div className="logo ">
         
-          𝙈𝙔 𝙋𝙊𝙍𝙏𝙁𝙊𝙇𝙄𝙊
+         <span className=" fw-bold" style={{ color: "#00e5ff"  }}>MY PORTFOLIO</span>
         
         </div>
 
