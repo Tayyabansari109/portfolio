@@ -12,7 +12,7 @@ const Hero = () => {
       /> */}
 
       {/* Left — Text Content */}
-      <div className="hero-left" data-aos="fade-right">
+      <div className=" mt-5 hero-left" data-aos="fade-right">
         <h1 className="hero-heading">
           Hi, I'm <br />
           <span className="hero-name">Muhammad<br />Tayyab</span>
@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
 
       {/* Right — CSS Robot */}
-      <div className=" robot-container" data-aos="fade-left">
+      <div className="mt-5 robot-container" data-aos="fade-left">
         <div className="css-robot">
 
           <div className="robot-glow"></div>
