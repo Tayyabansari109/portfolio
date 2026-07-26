@@ -15,15 +15,15 @@
   gap: 30px;
   background-color: #011031 !important;
   border-radius: 8px;
-  border-left: 4px solid #5fefd7;
-  box-shadow: 0px 0px 20px #5fefd7;
+  border-left: 4px solid #00e5ff;
+  box-shadow: 0px 0px 20px #00e5ff;
   padding: 20px;
   transition: transform 0.9s ease !important;
 }
 
 .card9:hover, .card10:hover, .card11:hover, .card12:hover, .card13:hover, .card14:hover {
   transform: scale(1.05) !important;
-  box-shadow: 0px 0px 35px rgb(79, 243, 234);
+  box-shadow: 0px 0px 35px #00e5ff;
   cursor: pointer;
 }
 
@@ -34,6 +34,6 @@
 }
 
 div>h4 {
-    color: rgb(79, 243, 234);
+    color: #00e5ff;
 
 }

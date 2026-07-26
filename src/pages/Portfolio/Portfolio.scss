@@ -21,7 +21,7 @@ width: 100%;
     margin-left: 60px;
     border-radius: 20px;
     flex: 1 1 200px;
-     box-shadow: 0px 0px 9px rgb(79, 243, 234);
+     box-shadow: 0px 0px 9px #00e5ff;
 }
 @media (min-width: 300px) and (max-width: 420px) {
   .card15 {
@@ -36,23 +36,23 @@ width: 100%;
 .card15:hover {
      transform: scale(1.05) !important;
      transition: transform 0.3s ease;
-     box-shadow: 0px 0px 20px rgb(79, 243, 234);
+     box-shadow: 0px 0px 20px #00e5ff;
      cursor: pointer;
 }
 
 .ico {
-    color: rgb(79, 243, 234);
+    color: #00e5ff;
     font-size: 25px;
     margin: 20px 0px 20px 8px;
 }
 .ico:hover {
-    box-shadow: 0px 0px 30px rgb(79, 243, 234);
+    box-shadow: 0px 0px 30px #00e5ff;
     transform: scale(1.2);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 div>h4 {
-    color: rgb(79, 243, 234) !important;
+    color: #00e5ff !important;
 
 }

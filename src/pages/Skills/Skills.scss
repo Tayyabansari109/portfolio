@@ -33,13 +33,13 @@
     width: 500px;
     padding: 20px;
     border-radius: 20px;
-    border: 1px solid rgb(79, 243, 234);
+    border: 1px solid #00e5ff;
     transition: transform 0.9s ease !important;
 }
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover, .card8:hover {
   transform: scale(1.05) !important;
-  box-shadow: 0px 0px 35px rgb(79, 243, 234);
+  box-shadow: 0px 0px 35px #00e5ff;
   cursor: pointer;
 }
 
@@ -61,7 +61,7 @@
 
 .progress-container {
  width: 100%;
-  background: rgb(79, 243, 234);
+  background: #00e5ff;
   height: 20px;
     border-radius: 15px;
     color: black;
@@ -76,7 +76,7 @@
 
 
 .ant-btn {
- background-color: #56eff5 !important;
+ background-color: #00e5ff !important;
  width: 100%;
  border-radius: 30px;
  color: black;
