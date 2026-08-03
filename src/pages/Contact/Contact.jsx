@@ -30,7 +30,7 @@ const Contact = () => {
        <a href="https://www.facebook.com/share/17qPhrj9zy/" target="_blank"><FontAwesomeIcon className='m-4' id='fac' icon={ faFacebook } /></a>
        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ta759777@gmail.com" target='_blank' ><FontAwesomeIcon className='m-4' id='eve' icon={ faEnvelope } /></a>
 </div>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=ta759777@gmail.com" target='_blank' > <button id='butt'> Contact Me</button></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=ta759777@gmail.com" target='_blank' > <button className='my-5 hero-btn'> Contact Me</button></a>
     
     </div>
 </div>
