@@ -6,7 +6,8 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-top: 150px;
+    margin-top: 80px;
+    padding: 0px 70px;
 }
 
 #he {
@@ -43,11 +44,12 @@
   }
 }
 #space, #lit {
-    font-size: 14px;
+  margin-top: 50px;
+    font-size: 18px;
     font-weight: bold;
-    line-height: 2;
+    // line-height: 2;
     text-align: justify;
-    word-spacing: 2px;
+    // word-spacing: 2px;
 }
 
 @media (max-width:800px) {
